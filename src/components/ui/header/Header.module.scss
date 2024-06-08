@@ -1,0 +1,53 @@
+﻿@import '@/styles/_variables.scss';
+@import '@/styles/_mixins.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+  .container {
+    padding: 16px;
+    min-width: $desktop;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      font-weight: 700;
+      font-size: 36px;
+    }
+
+    nav {
+      display: flex;
+      gap: 0 20px;
+
+      a {
+        color: #000;
+        text-decoration: none;
+        font-size: 20px;
+        &:hover {
+          text-decoration: underline;
+          color: #8b8a8a;
+        }
+      }
+    }
+
+    @include responsive-with-header();
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+
+      nav {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
