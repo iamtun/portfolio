@@ -1,0 +1,14 @@
+﻿@mixin responsive-with-header {
+  @media (max-width: $desktop) {
+    min-width: $desktop-small;
+  }
+
+  @media (max-width: $desktop-small) {
+    min-width: $tablet;
+  }
+
+  @media (max-width: $tablet) {
+    min-width: auto !important;
+    width: auto;
+  }
+}
