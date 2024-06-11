@@ -1,4 +1,9 @@
+import {Hero} from '@/components/ui';
 
 export default function Home() {
-  return <h1>Hi</h1>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
