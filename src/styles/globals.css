@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: #2d2e32;
+}
+
 body {
   min-width: 100dvw;
   min-height: 100dvh;

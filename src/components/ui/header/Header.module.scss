@@ -1,53 +1,44 @@
 ﻿@import '@/styles/_variables.scss';
 @import '@/styles/_mixins.scss';
 
-.wrapper {
+.container {
+  padding: 24px 40px 24px 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   display: flex;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  align-items: center;
+  justify-content: space-between;
 
-  .container {
-    padding: 16px;
-    min-width: $desktop;
+  .logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-color);
+  }
 
+  nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 0 20px;
 
-    .logo {
-      font-weight: 700;
-      font-size: 36px;
-    }
-
-    nav {
-      display: flex;
-      gap: 0 20px;
-
-      a {
-        color: #000;
-        text-decoration: none;
-        font-size: 20px;
-        &:hover {
-          text-decoration: underline;
-          color: #8b8a8a;
-        }
-      }
-    }
-
-    @include responsive-with-header();
-
-    @media (max-width: $mobile) {
-      flex-direction: column;
-
-      nav {
-        a {
-          font-size: 16px;
-        }
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      &:hover {
+        color: #147efb;
       }
     }
   }
 
-  @media (max-width: $tablet) {
-    display: block;
+  @include responsive-with-header();
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+
+    nav {
+      justify-content: space-between;
+      a {
+        font-size: 16px;
+      }
+    }
   }
 }
