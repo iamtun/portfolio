@@ -1,0 +1,52 @@
+﻿@import '@/styles/_variables.scss';
+
+.container {
+  width: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  strong {
+    border-right: 2px solid var(--text-color);
+    color: #2d2e32;
+    font-weight: 600;
+    margin-right: 24px;
+    padding-right: 24px;
+  }
+
+  .logos {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      list-style: none;
+
+      img {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: translateY(-1rem);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    justify-content: center;
+    strong {
+      margin: 0;
+      padding: 4px 12px;
+      margin-bottom: 12px;
+      border-right: none;
+      text-align: center;
+      border-bottom: 2px solid var(--text-color);
+      font-size: 16px;
+    }
+
+    ul {
+      justify-content: center;
+    }
+  }
+}
