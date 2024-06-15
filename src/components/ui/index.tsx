@@ -1,3 +1,5 @@
 ﻿import Header from './header';
 import Hero from './hero';
-export { Header, Hero };
+import About from './about';
+
+export { Header, Hero, About };

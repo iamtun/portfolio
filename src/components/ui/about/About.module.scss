@@ -1,0 +1,39 @@
+﻿@import '@/styles/_variables.scss';
+
+.wrapper {
+  position: relative;
+  padding: 24px 40px 24px 50px;
+  .container {
+    max-width: 870px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+
+    img {
+      z-index: 100;
+      border-radius: 12px;
+    }
+
+    .content {
+      min-width: 400px;
+      flex: 1;
+
+      h2,
+      h3 {
+        padding-bottom: 16px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        min-width: auto !important;
+      }
+    }
+  }
+
+  .cover {
+    height: 100%;
+    position: absolute;
+  }
+}
