@@ -2,16 +2,10 @@
 import Link from 'next/link';
 
 import styles from './Header.module.scss';
-import {Poppins} from 'next/font/google';
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['500', '600', '700', '900'],
-});
 
 const Header = () => {
   return (
-    <header className={`${styles.container} ${poppins.className}`}>
+    <header className={`${styles.container}`}>
       <h3 className={styles.logo}>Tuna.dev</h3>
 
       <nav>
