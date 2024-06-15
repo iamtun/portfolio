@@ -14,4 +14,9 @@
 body {
   min-width: 100dvw;
   min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+#tsparticles {
+  height: inherit !important;
 }
