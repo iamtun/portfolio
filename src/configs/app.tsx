@@ -18,6 +18,11 @@ const configApp = {
     ],
     skills: ['html,css', 'js,ts', 'react,next', 'docker,scss'],
   },
+  about: {
+    title: 'About',
+    desc: `A Front-end React Developer based in HCMC, VietNam. 📍`,
+    aboutMe: `Hey, I'm Tuan Le, a Frontend Developer. I'm passionate about creating clean UI/UX for users. Currently, my main stack includes React/Next.js, Antd, CSS, and TypeScript. I also have experience working with Strapi CMS and Appsmith. I know a little about databases like Posgrest and Mongodb.`,
+  },
 };
 
 export default configApp;
