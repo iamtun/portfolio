@@ -9,7 +9,10 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: 'Tuna dev',
+  title: {
+    template: '%s | Tuna dev',
+    default: 'Tuna dev',
+  },
   description: 'Tuna dev portfolio',
 };
 
