@@ -1,0 +1,19 @@
+﻿.container {
+  min-height: 100px;
+  padding: 24px 40px 24px 50px;
+  background: var(--text-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 0;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+
+  .socials {
+    display: flex;
+    gap: 0 16px;
+    a {
+      color: #fff !important;
+    }
+  }
+}
