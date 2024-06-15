@@ -2,16 +2,23 @@
 @import '@/styles/_mixins.scss';
 
 .container {
+  width: 100dvw;
   padding: 24px 40px 24px 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000 !important;
+  background: #fff;
 
   .logo {
     font-weight: 900;
     font-size: 20px;
     color: var(--text-color);
+    cursor: pointer;
   }
 
   nav {
