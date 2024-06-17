@@ -15,7 +15,7 @@ const configApp = {
       },
       {
         icon: <BsLinkedin fontSize={28} />,
-        link: 'https://www.linkedin.com/in/letuan-iuh',
+        link: 'www.linkedin.com/in/tunase',
       },
     ],
     skills: ['html,css', 'js,ts', 'react,next', 'docker,scss'],
