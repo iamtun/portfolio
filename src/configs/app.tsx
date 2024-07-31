@@ -15,7 +15,7 @@ const configApp = {
       },
       {
         icon: <BsLinkedin fontSize={28} />,
-        link: 'www.linkedin.com/in/tunase',
+        link: 'https://www.linkedin.com/in/tunase',
       },
     ],
     skills: ['html,css', 'js,ts', 'react,next', 'docker,scss'],
@@ -47,7 +47,7 @@ const configApp = {
           />
         ),
         label: 'Gmail',
-        content: 'tuanle.workse@gmail',
+        content: 'tuanle.workse@gmail.com',
       },
     ],
   },
